@@ -4,8 +4,8 @@
   --cor-primaria: #ff9400;
   --cor-secundaria: #fbbc05;
   --cor-destaque: #cfeaf3;
-  --cor-fundo: #fafafa;
-  --cor-texto: #2a2a2a;
+  --cor-fundo: #ffffff;
+  --cor-texto: #323232;
   --fonte-logo: "Josefin Sans", sans-serif;
   --fonte-titulos: "Poppins", sans-serif;
   --fonte-texto: "Open Sans", sans-serif;
@@ -20,26 +20,27 @@ html {
   color: var(--cor-texto);
 }
 /* NAVBAR START */
-.navbar{
+.navbar {
   background-color: var(--cor-fundo);
+  transition: all 300ms ease-in;
 }
-.navbar .navbar-brand{
+.navbar .navbar-brand {
   margin: 0;
 }
-.navbar a{
+.navbar a {
   font: normal bolder 2em var(--fonte-logo);
   color: var(--cor-texto);
 }
-.navbar a span{
+.navbar a span {
   color: var(--cor-secundaria);
 }
-.navbar .navbar-collapse{
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
-.navbar .navbar-collapse ul li a{
+.navbar .navbar-collapse ul li a {
   font: normal normal 1em var(--fonte-titulos);
 }
-.btn-lg {
+.btn-primary {
   background-color: var(--cor-secundaria);
   border: 0;
   border-radius: 25px;
@@ -47,6 +48,33 @@ html {
   height: 45px;
   width: 140px;
 }
-.btn-lg:hover {
+.btn-primary:hover {
   background-color: var(--cor-primaria);
+}
+.btn-close,
+.navbar-toggler {
+  box-shadow: none !important;
+}
+.navbar-nav .nav-item:hover .nav-link {
+  color: var(--cor-primaria);
+}
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item:hover .nav-link {
+  color: var(--cor-primaria);
+}
+/* NAVBAR END */
+.title{
+  font: normal 600 2em var(--fonte-titulos);
+  text-align: center;
+}
+.title span{
+  color: var(--cor-secundaria);
+  font-weight: bold;
+}
+.text-secondary{
+  font: normal normal 1.1em var(--cor-texto);
+}
+.col{
+  padding-top: 10px;
+  border-radius: 10px;
 }

@@ -1,5 +1,5 @@
 const $navbarCollapse = document.querySelector("#collapse");
-const $navbarCollapseUl = document.querySelector("#collapse ul");
+const $navbarCollapseUl = document.querySelector(".offcanvas-body ul");
 const btnlg = `<button type="button" class="btn btn-primary btn-lg">Acessar</button>`;
 let responseWindow = () => {
   let widht = window.innerWidth;
@@ -27,3 +27,14 @@ let responseWindow = () => {
 
 window.addEventListener("resize", () => responseWindow());
 window.addEventListener("DOMContentLoaded", () => responseWindow());
+window.addEventListener("scroll", () => stickyNavbar());
+
+let stickyNavbar = () => {
+  const nav = document.querySelector(".navbar")
+  let height = window.scrollY;
+  if(height > 0){
+    nav.classList.add("shadow-sm")
+  } else {
+    nav.classList.remove("shadow-sm")
+  }
+}
