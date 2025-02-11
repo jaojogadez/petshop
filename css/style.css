@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 :root {
   --cor-primaria: #ff9400;
   --cor-secundaria: #fbbc05;
@@ -67,20 +68,99 @@ html {
   color: var(--cor-primaria);
 }
 /* NAVBAR END */
-.title{
-  font: normal 600 2em var(--fonte-titulos);
+.title {
+  font: normal 600 2em var(--fonte-titulos) !important;
 }
 h2.title {
   text-align: center;
 }
-.title span{
-  color: var(--cor-secundaria);
+.title span {
+  color: var(--cor-secundaria) ;
   font-weight: bold;
 }
-.text-secondary{
+.text-secondary {
   font: normal normal 1.1em var(--cor-texto);
 }
-.col{
+.col {
   padding-top: 10px;
   border-radius: 10px;
+}
+
+ /* PRICING */
+ #pricing .card {
+  width: 325px;
+  height: 500px;
+  border-radius: 25px !important;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+#pricing .card:hover {
+  transform: scale(1.05);
+}
+#pricing .card-header {
+  border: 0;
+  background-color: unset;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#pricing ul {
+  padding: 0;
+  list-style: none;
+}
+#pricing ul li {
+  line-height: 2rem;
+}
+.btn-buy {
+  background: linear-gradient(135deg, #FF914D, #FF6700);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+}
+.btn-buy:hover {
+  background: linear-gradient(135deg, #FF6700, #FF914D);
+}
+.highlight-card {
+  background: linear-gradient(135deg, #FF914D, #FF6700);
+  color: white;
+  transform: scale(1.1);
+}
+.highlight-card .card-header,
+.highlight-card ul,
+.highlight-card button {
+  color: white;
+}
+/* FOOTER */
+footer {
+  position: relative;
+  z-index: 9999;
+}
+footer h5 {
+  font: normal 600 2em var(--fonte-logo);
+}
+footer h5 span {
+  color: var(--cor-secundaria);
+}
+
+footer::after {
+  content: url("../images/cat-2.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+footer ul li.nav-item {
+  position: relative;
+  color: var(--cor-texto);
+  text-indent: 1.5rem;
+}
+footer ul.nav .nav-item:hover .nav-link {
+  color: var(--cor-primaria) !important;
+}
+footer ul li.nav-item::before {
+  content: url("../images/pet.png");
+  position: absolute;
+  left: -25px;
+  scale: 0.8;
 }
