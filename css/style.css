@@ -51,6 +51,10 @@ html {
 .btn-primary:hover {
   background-color: var(--cor-primaria);
 }
+.btn-primary:active {
+  background-color: var(--cor-primaria) !important;
+  scale: 0.9;
+}
 .btn-close,
 .navbar-toggler {
   box-shadow: none !important;
@@ -65,6 +69,8 @@ html {
 /* NAVBAR END */
 .title{
   font: normal 600 2em var(--fonte-titulos);
+}
+h2.title {
   text-align: center;
 }
 .title span{
