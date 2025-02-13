@@ -86,7 +86,7 @@ h2.title {
   border-radius: 10px;
 }
 
- /* PRICING */
+/* PRICING */
  #pricing .card {
   width: 325px;
   height: 500px;
@@ -131,6 +131,41 @@ h2.title {
 .highlight-card ul,
 .highlight-card button {
   color: white;
+}
+
+/* PRINCING OFC */
+.container-card {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+.princing-card {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.150) ;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 300px;
+  text-align: center;
+}
+.name-card {
+  margin: 0 0 1rem;
+  border: 1px solid black;
+}
+.name-card h1{
+  font-size: 2em;
+  color: var(--cor-secundaria);
+}
+.name-card h2 {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: normal;
+}
+.name-card span {
+  color: var(--cor-texto);
+  font-size: 1.7em;
 }
 /* FOOTER */
 footer {
