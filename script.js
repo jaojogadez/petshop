@@ -30,11 +30,43 @@ window.addEventListener("DOMContentLoaded", () => responseWindow());
 window.addEventListener("scroll", () => stickyNavbar());
 
 let stickyNavbar = () => {
-  const nav = document.querySelector(".navbar")
+  const nav = document.querySelector(".navbar");
   let height = window.scrollY;
-  if(height > 0){
-    nav.classList.add("shadow-sm")
+  if (height > 0) {
+    nav.classList.add("shadow-sm");
   } else {
-    nav.classList.remove("shadow-sm")
+    nav.classList.remove("shadow-sm");
   }
-}
+};
+
+// Swiper Start
+var swiper = new Swiper(".swiper", {
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18
+    },
+    // when window width is >= 640px
+    1188: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  }
+});
+// Swiper End

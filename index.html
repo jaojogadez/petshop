@@ -4,11 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Petshop</title>
+    <link rel="shortcut icon" href="images/dog-1.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -34,10 +46,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
+              <a class="nav-link" href="#about">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
+              <a class="nav-link" href="#services">Serviços</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pricing">Assinar</a>
@@ -49,7 +61,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Offcanva -->
     <div
       class="offcanvas offcanvas-end"
@@ -92,7 +103,7 @@
           <li class="nav-item">
             <a
               class="nav-link"
-              href="#components"
+              href="#services"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -102,7 +113,7 @@
           <li class="nav-item">
             <a
               class="nav-link"
-              href="#passbybass"
+              href="#pricing"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -144,7 +155,7 @@
           />
         </div>
       </div>
-      <div class="row container m-auto align-items-center gx-5 mb-5">
+      <div class="row container m-auto align-items-center gx-5 mb-5" id="about">
         <h2 class="title">Seu pet merece o melhor, nós cuidamos com amor!</h2>
         <div class="container col-11">
           <div
@@ -213,78 +224,169 @@
           </div>
         </div>
       </div>
-      <div class="row container m-auto align-items-center gx-5 mb-5" id="pricing">
+      <div class="row container m-auto align-items-center gx-5 mb-5" id="services"
+      >
+        <h2 class="title mb-4">
+          Serviços essenciais para dar o conforto que o seu pet merece!
+        </h2>
+        <div class="container col-11">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide shadow rounded-3 p-3">
+                <div class="col-6 d-flex align-items-center gap-2">
+                  <img
+                    src="images/Icon-1.png"
+                    alt="icon"
+                    class="img-fluid"
+                    width="80"
+                  />
+                  <div>
+                    <h3>Serviço</h3>
+                    <p class="display-5 fs-3">R$ 00,00</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <button type="button" class="btn btn-primary w-100">
+                    Acessar
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide shadow rounded-3 p-3">
+                <div class="col-6 d-flex align-items-center gap-2">
+                  <img
+                    src="images/Icon-1.png"
+                    alt="icon"
+                    class="img-fluid"
+                    width="80"
+                  />
+                  <div>
+                    <h3>Serviço</h3>
+                    <p class="display-5 fs-3">R$ 00,00</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <button type="button" class="btn btn-primary w-100">
+                    Acessar
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide shadow rounded-3 p-3">
+                <div class="col-6 d-flex align-items-center gap-2">
+                  <img
+                    src="images/Icon-1.png"
+                    alt="icon"
+                    class="img-fluid"
+                    width="80"
+                  />
+                  <div>
+                    <h3>Serviço</h3>
+                    <p class="display-5 fs-3">R$ 00,00</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <button type="button" class="btn btn-primary w-100">
+                    Acessar
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide shadow rounded-3 p-3">
+                <div class="col-6 d-flex align-items-center gap-2">
+                  <img
+                    src="images/Icon-1.png"
+                    alt="icon"
+                    class="img-fluid"
+                    width="80"
+                  />
+                  <div>
+                    <h3>Serviço</h3>
+                    <p class="display-5 fs-3">R$ 00,00</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <button type="button" class="btn btn-primary w-100">
+                    Acessar
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide shadow rounded-3 p-3">
+                <div class="col-6 d-flex align-items-center gap-2">
+                  <img
+                    src="images/Icon-1.png"
+                    alt="icon"
+                    class="img-fluid"
+                    width="80"
+                  />
+                  <div>
+                    <h3>Serviço</h3>
+                    <p class="display-5 fs-3">R$ 00,00</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <button type="button" class="btn btn-primary w-100">
+                    Acessar
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide shadow rounded-3 p-3">
+                <div class="col-6 d-flex align-items-center gap-2">
+                  <img
+                    src="images/Icon-1.png"
+                    alt="icon"
+                    class="img-fluid"
+                    width="80"
+                  />
+                  <div>
+                    <h3>Serviço</h3>
+                    <p class="display-5 fs-3">R$ 00,00</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                  <button type="button" class="btn btn-primary w-100">
+                    Acessar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row container m-auto align-items-center gx-5 mb-5" id="pricing"
+      >
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="title">Pacotes Especiais</h1>
           <p class="fs-5">
             Oferecemos um pacote especial só para você e sua pequena família.
           </p>
         </div>
-        <!-- <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Semanal Plan</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>5 days service</li>
-                  <li>Pet shower</li>
-                  <li>Basic Checkup</li>
-                  <li>Grooming</li>
-                  <li>Hair and Nail Cut</li>
-                </ul>
-                <button type="button" class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Mensal Plan</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>30 days service</li>
-                  <li>Pet Shower </li>
-                  <li>Intensive Checkup
-                  <li>Grooming</li>
-                  <li>Hair and Nail Cut</li>
-                  <li>Control Hair Failing</li>
-                  <li>Fresh Snack</li>
-                  <li>Pet Park & Games</li>
-                </ul>
-                <button type="button" class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Anual Plan</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1 year service</li>
-                  <li>Pet Shower </li>
-                  <li>Intensive Checkup
-                  <li>Grooming</li>
-                  <li>Hair and Nail Cut</li>
-                  <li>Control Hair Failing</li>
-                  <li>Fresh Snack</li>
-                  <li>Pet Park & Games</li>
-                </ul>
-                <button type="button" class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <div class="container-card" id="services">
+        <div class="container-card mb-5">
           <!-- Semanal -->
-          <div class="princing-card">
+          <div
+            class="princing-card rounded-start"
+            style="box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.15)"
+          >
             <div class="name-card">
               <h2>Plano Semanal</h2>
               <h1>R$<span>100,00</span></h1>
@@ -299,7 +401,10 @@
             <button type="button" class="btn btn-primary">Acessar</button>
           </div>
           <!-- Mensal -->
-          <div class="princing-card best-offer">
+          <div
+            class="princing-card best-offer rounded-3"
+            style="box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15)"
+          >
             <div class="name-card">
               <h2>Plano Mensal</h2>
               <h1>R$<span>100,00</span></h1>
@@ -317,7 +422,10 @@
             <button type="button" class="btn btn-primary">Acessar</button>
           </div>
           <!-- Anual -->
-          <div class="princing-card">
+          <div
+            class="princing-card rounded-end"
+            style="box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15)"
+          >
             <div class="name-card">
               <h2>Plano Anual</h2>
               <h1>R$<span>100,00</span></h1>
@@ -416,6 +524,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
