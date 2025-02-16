@@ -249,4 +249,8 @@ footer ul li.nav-item::before {
   .container-card {
     flex-direction: column;
   }
+  #services::before,
+  #about::before {
+    display: none;
+  }
 }
