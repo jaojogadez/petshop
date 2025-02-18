@@ -21,8 +21,6 @@ let responseWindow = () => {
   } else {
     $navbarCollapseUl.insertAdjacentHTML("beforebegin", btnlg);
   }
-
-  console.log(arrayBtns);
 };
 
 window.addEventListener("resize", () => responseWindow());
@@ -55,18 +53,42 @@ var swiper = new Swiper(".swiper", {
     // when window width is >= 320px
     640: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     // when window width is >= 480px
     768: {
       slidesPerView: 2,
-      spaceBetween: 18
+      spaceBetween: 18,
     },
     // when window width is >= 640px
     1188: {
       slidesPerView: 3,
-      spaceBetween: 24
-    }
-  }
+      spaceBetween: 24,
+    },
+  },
 });
 // Swiper End
+
+// Active Nav Link Start
+const sections = document.querySelectorAll(".active-section");
+const navLinks = document.querySelectorAll("#collapse .nav-link");
+
+window.onscroll = () => {
+  sections.forEach((section) => {
+    let top = window.screenY;
+    let offset = section.offsetTop;
+    let height = section.offsetHeight;
+    let id = section.getAttribute("id");
+    if (top >= offset && top > offset + height) {
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        document
+          .querySelector("#collapse ul li a[href*=' + id +']")
+          .classList.add("active");
+        let href = link.getAttribute("href")
+        console.log(href.value)
+      });
+    }
+  });
+};
+// Active Nav Link End
