@@ -2,6 +2,10 @@
 
 Um sistema web desenvolvido para oferecer serviços e informações sobre cuidados com pets.
 
+![Projeto - Petshop](https://github.com/user-attachments/assets/0d5ed2be-77fd-40b6-99ff-f03f61383640)
+
+
+
 🔗 Acesse o projeto: [https://jaojogadez.github.io/petshop/]
 
 ## ✨ Recursos
