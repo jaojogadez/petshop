@@ -1,500 +1,500 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Petshop</title>
-    <link rel="shortcut icon" href="images/dog-1.png" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar sticky-top navbar-expand-lg mb-4">
-      <!-- Navbar content -->
-      <div class="container col-11">
-        <a class="navbar-brand" href="#"> Pet <span>Shop</span> </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Assinar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Offcanva -->
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasNavbarLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button
-          type="button"
-          class="btn-close btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Petshop</title>
+  <link rel="shortcut icon" href="images/dog-1.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg mb-4">
+    <!-- Navbar content -->
+    <div class="container col-11">
+      <a class="navbar-brand" href="#"> Pet <span>Shop</span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a
-              class="nav-link"
-              aria-current="page"
-              href="#home"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <i class="bi bi-house"></i> Home
-            </a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#about"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <i class="bi bi-card-text"></i> Sobre
-            </a>
+            <a class="nav-link" href="#about">Sobre</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#services"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <i class="bi bi-motherboard"></i> Serviços
-            </a>
+            <a class="nav-link" href="#services">Serviços</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#pricing"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <i class="bi bi-clipboard-check"></i> Assinar
-            </a>
+            <a class="nav-link" href="#pricing">Assinar</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#contact"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <i class="bi bi-gear"></i> Contato
-            </a>
+            <a class="nav-link" href="#contact">Contato</a>
           </li>
         </ul>
       </div>
     </div>
-
-    <div class="container-fluid">
-      <div class="row container m-auto align-items-center gx-5 mb-5 active-section" id="home">
-        <div class="col-md-6">
-          <h1 class="title">
-            O melhor suporte no cuidado para seu <span>melhor amigo</span>
-          </h1>
-          <p class="text-secondary">
-            Aqui, você encontrará respostas para todas as suas dúvidas, desde a
-            escolha da melhor ração até dicas essenciais para garantir o
-            bem-estar do seu companheiro peludo.
-          </p>
-          <button type="button" class="btn btn-primary">Acessar</button>
-        </div>
-        <div class="col-md-6">
-          <img
-            src="images/dog-and-cat.png"
-            alt="Cachorro e gato saúdaveis fofinhos e bem cuidados."
-            class="img-fluid"
-          />
-        </div>
-      </div>
-      <div class="row container m-auto align-items-center gx-5 mb-5 active-section" id="about">
-        <h2 class="title">Seu pet merece o melhor, nós cuidamos com amor!</h2>
-        <div class="container col-11">
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 py-5"
-          >
-            <div class="col d-flex align-items-start shadow-sm">
-              <div class="text-center">
-                <img src="images/Icon-1.png" alt="Icone-Adestramento" />
-                <h3 class="fw-bold mb-0 fs-4">Adestramento</h3>
-                <p class="text-secondary">
-                  Corrija comportamentos, eduque, divirta-se e fortaleça a
-                  relação com seu pet.
-                </p>
+  </nav>
+  <!-- Offcanva -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#home" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-house"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-card-text"></i> Sobre
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-motherboard"></i> Serviços
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-clipboard-check"></i> Assinar
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" data-aos="fade-up" data-aos-delay="600">
+            <i class="bi bi-gear"></i> Contato
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Modal Log In / Sign Up-->
+  <div class="modal fade" id="loginSignUp" tabindex="-1" aria-labelledby="loginSignUpLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body" id="signUp">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="row gx-5 align-items-center p-3">
+            <form class="col-md-6" autocomplete="off">
+              <h3>Create Your Account</h3>
+              <button type="button" class="mb-4 w-100 rounded-3" id="singWithGoogle">
+                <img src="images/google.png" class="img-fluid" width="20" alt="google icon"> 
+                <span class="text-secondary"> 
+                  Sign Up with Google
+                </span>
+              </button>
+              <div id="orSpan" class="text-secondary">
+                <span>Or</span>
               </div>
-            </div>
-            <div class="col d-flex align-items-start shadow-sm">
-              <div class="text-center">
-                <img src="images/Icon-2.png" alt="Icone-Alimentação" />
-                <h3 class="fw-bold mb-0 fs-4">Alimentação</h3>
-                <p class="text-secondary">
-                  Saiba dietas equilibradas, aprenda sobre dietas caseiras,
-                  escolha a melhor ração e muito mais.
-                </p>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="off"
+                  type="text"
+                  name="text"
+                  id="username"
+                />
+                <label for="username">Your Name</label>
               </div>
-            </div>
-            <div class="col d-flex align-items-start shadow-sm">
-              <div class="text-center">
-                <img src="images/Icon-3.png" alt="Icone-Adoção" />
-                <h3 class="fw-bold mb-0 fs-4">Adoção</h3>
-                <p class="text-secondary">
-                  Descubra nomes encantadores, dicas, o que fazer e tudo o que
-                  você precisa saber para adotar um pet.
-                </p>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="OFF"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+                <label for="email"><i class="bi bi-at"></i> Email</label>
               </div>
-            </div>
-            <div class="col d-flex align-items-start shadow-sm">
-              <div class="text-center">
-                <img src="images/Icon-4.png" alt="Icone-Saúde" />
-                <h3 class="fw-bold mb-0 fs-4">Saúde</h3>
-                <p class="text-secondary">
-                  Aprenda tudo o que precisa saber sobre a saúde do seu pet e
-                  proteja seu pet de doenças.
-                </p>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="off"
+                  type="password"
+                  name="text"
+                  id="password"
+                />
+                <label for="username"><i class="bi bi-lock"></i> Password</label>
               </div>
-            </div>
-            <div class="col d-flex align-items-start shadow-sm">
-              <div class="text-center">
-                <img src="images/Icon-5.png" alt="Icone-Cuidados" />
-                <h3 class="fw-bold mb-0 fs-4">Cuidados</h3>
-                <p class="text-secondary">
-                  Entenda o cio, gestação, higiene dental, cuidado das orelhas e
-                  muito mais.
-                </p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="yes" id="check__terms" checked required>
+                <label class="form-check-label" for="check__terms">
+                  I agree to the <a href="">Terms & Conditions</a>
+                </label>
               </div>
-            </div>
-            <div class="col d-flex align-items-start shadow-sm">
-              <div class="text-center">
-                <img src="images/Icon-6.png" alt="Icone-Curiosidades" />
-                <h3 class="fw-bold mb-0 fs-4">Curiosidades</h3>
-                <p class="text-secondary">
-                  Aprenda dicas, descubra espécies em perigo de extinção, saiba
-                  diversas raças e muito mais.
-                </p>
-              </div>
+              <input type="submit" value="Register" class="btn btn-success">
+              <p class="text-center mt-4 text-secondary">
+                Already have an account? <a href="">Sign In</a>
+              </p>
+            </form>
+            <div class="col-md-6 order-sm-1">
+              <img src="images/dog-1.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
-      </div>
-      <div class="row container m-auto align-items-center gx-5 mb-5 active-section" id="services"
-      >
-        <h2 class="title mb-4">
-          Serviços essenciais para dar o conforto que o seu pet merece!
-        </h2>
-        <div class="container col-11">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide shadow rounded-3 p-3">
-                <div class="col-6 d-flex align-items-center gap-2">
-                  <i class="bi bi-droplet"></i>
-                  <div>
-                    <h3>Banho</h3>
-                    <p class="display-5 fs-3">R$ 50,00</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p>
-                    Deixe seu pet limpo e cheiroso com nosso banho especializado.
-                  </p>
-                  <button type="button" class="btn btn-primary w-100">
-                    Acessar
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide shadow rounded-3 p-3">
-                <div class="col-6 d-flex align-items-center gap-2">
-                  <i class="bi bi-scissors"></i>
-                  <div>
-                    <h3>Tosa</h3>
-                    <p class="display-5 fs-3">R$ 60,00</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p>
-                    Corte de pelos focado na higiene e conforto do seu pet.
-                  </p>
-                  <button type="button" class="btn btn-primary w-100">
-                    Acessar
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide shadow rounded-3 p-3">
-                <div class="col-6 d-flex align-items-center gap-2">
-                  <i class="bi bi-heart-pulse"></i>
-                  <div>
-                    <h3>Saúde</h3>
-                    <p class="display-5 fs-3">R$ 80,00</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p>
-                    Consulta veterinária preventiva para garantir que seu pet está saudável.
-                  </p>
-                  <button type="button" class="btn btn-primary w-100">
-                    Acessar
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide shadow rounded-3 p-3">
-                <div class="col-6 d-flex align-items-center gap-2">
-                  <i class="bi bi-emoji-smile"></i>
-                  <div>
-                    <h3 class="fs-5">Limpeza Dental </h3>
-                    <p class="display-5 fs-3">R$ 70,00</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p>
-                    Higienização dos dentes do seu pet para prevenir problemas bucais.
-                  </p>
-                  <button type="button" class="btn btn-primary w-100">
-                    Acessar
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide shadow rounded-3 p-3">
-                <div class="col-6 d-flex align-items-center gap-2">
-                  <i class="bi bi-house-heart"></i>
-                  <div>
-                    <h3>Creche Pet </h3>
-                    <p class="display-5 fs-3">R$ 90,00/dia</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p>
-                    Espaço seguro e divertido para seu pet passar o dia brincando.
-                  </p>
-                  <button type="button" class="btn btn-primary w-100">
-                    Acessar
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide shadow rounded-3 p-3">
-                <div class="col-6 d-flex align-items-center gap-2">
-                  <i class="bi bi-droplet-half"></i>
-                  <div>
-                    <h3 class="fs-5">Banho Terapêutico</h3>
-                    <p class="display-5 fs-3">R$ 100,00</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p>
-                    Banho especial para pets com pele sensível ou problemas na pele.
-                  </p>
-                  <button type="button" class="btn btn-primary w-100">
-                    Acessar
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row container m-auto align-items-center gx-5 mb-4 active-section" id="pricing"
-      >
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="title">Pacotes Especiais</h1>
-          <p class="fs-5">
-            Oferecemos um pacote especial só para você e sua pequena família.
-          </p>
-        </div>
-        <div class="container-card mb-5">
-          <!-- Semanal -->
-          <div
-            class="princing-card rounded-start"
-            style="box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.15)"
-          >
-            <div class="name-card">
-              <h2>Plano Semanal</h2>
-              <h1>R$<span>100,00</span></h1>
-            </div>
-            <ul class="list-unstyled">
-              <li>5 days service</li>
-              <li>Pet Shower</li>
-              <li>Basic Checkup</li>
-              <li>Grooming</li>
-              <li>Hair and Nail Cut</li>
-            </ul>
-            <button type="button" class="btn btn-primary">Acessar</button>
-          </div>
-          <!-- Mensal -->
-          <div
-            class="princing-card best-offer rounded-3"
-            style="box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15)"
-          >
-            <div class="name-card">
-              <h2>Plano Mensal</h2>
-              <h1>R$<span>100,00</span></h1>
-            </div>
-            <ul class="list-unstyled">
-              <li>30 days service</li>
-              <li>Pet Shower</li>
-              <li>Intensive Checkup</li>
-              <li>Grooming</li>
-              <li>Hair and Nail Cut</li>
-              <li>Control Hair Falling</li>
-              <li>Fresh Snack</li>
-              <li>Pet Park & Games</li>
-            </ul>
-            <button type="button" class="btn btn-primary">Acessar</button>
-          </div>
-          <!-- Anual -->
-          <div
-            class="princing-card rounded-end"
-            style="box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15)"
-          >
-            <div class="name-card">
-              <h2>Plano Anual</h2>
-              <h1>R$<span>100,00</span></h1>
-            </div>
-            <ul class="list-unstyled">
-              <li>5 days service</li>
-              <li>Pet Shower</li>
-              <li>Basic Checkup</li>
-              <li>Grooming</li>
-              <li>Hair and Nail Cut</li>
-            </ul>
-            <button type="button" class="btn btn-primary">Acessar</button>
-          </div>
-        </div>
-      </div>
-      <div class="row container m-auto align-items-center gx-5 active-section" id="contact">
-        <footer class="py-5">
-          <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Pet <span>Shop</span></h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Home</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Sobre</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Serviços</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Assinar</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#contact" class="nav-link p-0 text-muted">Contato</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-              <h5 style="opacity: 0">Pet <span>Shop</span></h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Instagram</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Facebook</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Twitter X</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Whatsapp</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-              <h5 style="opacity: 0">Pet <span>Shop</span></h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted"
-                    >petshop@email.com</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted"
-                    >(XX) XXXXX XXXX</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted"
-                    >Rua endereço bacana</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            class="d-flex flex-column flex-sm-row gap-4 py-4 my-4 border-top"
-          >
-            <p>© 2025 Pet Shop, Inc. Todos os direitos reservados.</p>
-            <a href="" class="nav-link p-0">
-              <p class="text-decoration-underline">Política de Privacidade</p>
-            </a>
-            <a href="" class="nav-link p-0">
-              <p class="text-decoration-underline">Política de Cookies</p>
-            </a>
-          </div>
-        </footer>
       </div>
     </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row container m-auto align-items-center gx-5 mb-5 active-section" id="home">
+      <div class="col-md-6">
+        <h1 class="title">
+          O melhor suporte no cuidado para seu <span>melhor amigo</span>
+        </h1>
+        <p class="text-secondary">
+          Aqui, você encontrará respostas para todas as suas dúvidas, desde a
+          escolha da melhor ração até dicas essenciais para garantir o
+          bem-estar do seu companheiro peludo.
+        </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#loginSignUp">Acessar</button>
+      </div>
+      <div class="col-md-6">
+        <img src="images/dog-and-cat.png" alt="Cachorro e gato saúdaveis fofinhos e bem cuidados." class="img-fluid" />
+      </div>
+    </div>
+    <div class="row container m-auto align-items-center gx-5 mb-5 active-section" id="about">
+      <h2 class="title">Seu pet merece o melhor, nós cuidamos com amor!</h2>
+      <div class="container col-11">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 py-5">
+          <div class="col d-flex align-items-start shadow-sm">
+            <div class="text-center">
+              <img src="images/Icon-1.png" alt="Icone-Adestramento" />
+              <h3 class="fw-bold mb-0 fs-4">Adestramento</h3>
+              <p class="text-secondary">
+                Corrija comportamentos, eduque, divirta-se e fortaleça a
+                relação com seu pet.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start shadow-sm">
+            <div class="text-center">
+              <img src="images/Icon-2.png" alt="Icone-Alimentação" />
+              <h3 class="fw-bold mb-0 fs-4">Alimentação</h3>
+              <p class="text-secondary">
+                Saiba dietas equilibradas, aprenda sobre dietas caseiras,
+                escolha a melhor ração e muito mais.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start shadow-sm">
+            <div class="text-center">
+              <img src="images/Icon-3.png" alt="Icone-Adoção" />
+              <h3 class="fw-bold mb-0 fs-4">Adoção</h3>
+              <p class="text-secondary">
+                Descubra nomes encantadores, dicas, o que fazer e tudo o que
+                você precisa saber para adotar um pet.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start shadow-sm">
+            <div class="text-center">
+              <img src="images/Icon-4.png" alt="Icone-Saúde" />
+              <h3 class="fw-bold mb-0 fs-4">Saúde</h3>
+              <p class="text-secondary">
+                Aprenda tudo o que precisa saber sobre a saúde do seu pet e
+                proteja seu pet de doenças.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start shadow-sm">
+            <div class="text-center">
+              <img src="images/Icon-5.png" alt="Icone-Cuidados" />
+              <h3 class="fw-bold mb-0 fs-4">Cuidados</h3>
+              <p class="text-secondary">
+                Entenda o cio, gestação, higiene dental, cuidado das orelhas e
+                muito mais.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start shadow-sm">
+            <div class="text-center">
+              <img src="images/Icon-6.png" alt="Icone-Curiosidades" />
+              <h3 class="fw-bold mb-0 fs-4">Curiosidades</h3>
+              <p class="text-secondary">
+                Aprenda dicas, descubra espécies em perigo de extinção, saiba
+                diversas raças e muito mais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row container m-auto align-items-center gx-5 mb-5 active-section" id="services">
+      <h2 class="title mb-4">
+        Serviços essenciais para dar o conforto que o seu pet merece!
+      </h2>
+      <div class="container col-11">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide shadow rounded-3 p-3">
+              <div class="col-6 d-flex align-items-center gap-2">
+                <i class="bi bi-droplet"></i>
+                <div>
+                  <h3>Banho</h3>
+                  <p class="display-5 fs-3">R$ 50,00</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>
+                  Deixe seu pet limpo e cheiroso com nosso banho especializado.
+                </p>
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                  data-bs-target="#loginSignUp">
+                  Acessar
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide shadow rounded-3 p-3">
+              <div class="col-6 d-flex align-items-center gap-2">
+                <i class="bi bi-scissors"></i>
+                <div>
+                  <h3>Tosa</h3>
+                  <p class="display-5 fs-3">R$ 60,00</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>
+                  Corte de pelos focado na higiene e conforto do seu pet.
+                </p>
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                  data-bs-target="#loginSignUp">
+                  Acessar
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide shadow rounded-3 p-3">
+              <div class="col-6 d-flex align-items-center gap-2">
+                <i class="bi bi-heart-pulse"></i>
+                <div>
+                  <h3>Saúde</h3>
+                  <p class="display-5 fs-3">R$ 80,00</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>
+                  Consulta veterinária preventiva para garantir que seu pet está saudável.
+                </p>
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                  data-bs-target="#loginSignUp">
+                  Acessar
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide shadow rounded-3 p-3">
+              <div class="col-6 d-flex align-items-center gap-2">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <h3 class="fs-5">Limpeza Dental </h3>
+                  <p class="display-5 fs-3">R$ 70,00</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>
+                  Higienização dos dentes do seu pet para prevenir problemas bucais.
+                </p>
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                  data-bs-target="#loginSignUp">
+                  Acessar
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide shadow rounded-3 p-3">
+              <div class="col-6 d-flex align-items-center gap-2">
+                <i class="bi bi-house-heart"></i>
+                <div>
+                  <h3>Creche Pet </h3>
+                  <p class="display-5 fs-3">R$ 90,00/dia</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>
+                  Espaço seguro e divertido para seu pet passar o dia brincando.
+                </p>
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                  data-bs-target="#loginSignUp">
+                  Acessar
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide shadow rounded-3 p-3">
+              <div class="col-6 d-flex align-items-center gap-2">
+                <i class="bi bi-droplet-half"></i>
+                <div>
+                  <h3 class="fs-5">Banho Terapêutico</h3>
+                  <p class="display-5 fs-3">R$ 100,00</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>
+                  Banho especial para pets com pele sensível ou problemas na pele.
+                </p>
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                  data-bs-target="#loginSignUp">
+                  Acessar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row container m-auto align-items-center gx-5 mb-4 active-section" id="pricing">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="title">Pacotes Especiais</h1>
+        <p class="fs-5">
+          Oferecemos um pacote especial só para você e sua pequena família.
+        </p>
+      </div>
+      <div class="container-card mb-5">
+        <!-- Semanal -->
+        <div class="princing-card rounded-start" style="box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.15)">
+          <div class="name-card">
+            <h2>Plano Semanal</h2>
+            <h1>R$<span>100,00</span></h1>
+          </div>
+          <ul class="list-unstyled">
+            <li>5 days service</li>
+            <li>Pet Shower</li>
+            <li>Basic Checkup</li>
+            <li>Grooming</li>
+            <li>Hair and Nail Cut</li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#loginSignUp">Acessar</button>
+        </div>
+        <!-- Mensal -->
+        <div class="princing-card best-offer rounded-3" style="box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15)">
+          <div class="name-card">
+            <h2>Plano Mensal</h2>
+            <h1>R$<span>100,00</span></h1>
+          </div>
+          <ul class="list-unstyled">
+            <li>30 days service</li>
+            <li>Pet Shower</li>
+            <li>Intensive Checkup</li>
+            <li>Grooming</li>
+            <li>Hair and Nail Cut</li>
+            <li>Control Hair Falling</li>
+            <li>Fresh Snack</li>
+            <li>Pet Park & Games</li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#loginSignUp">Acessar</button>
+        </div>
+        <!-- Anual -->
+        <div class="princing-card rounded-end" style="box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15)">
+          <div class="name-card">
+            <h2>Plano Anual</h2>
+            <h1>R$<span>100,00</span></h1>
+          </div>
+          <ul class="list-unstyled">
+            <li>5 days service</li>
+            <li>Pet Shower</li>
+            <li>Basic Checkup</li>
+            <li>Grooming</li>
+            <li>Hair and Nail Cut</li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#loginSignUp">Acessar</button>
+        </div>
+      </div>
+    </div>
+    <div class="row container m-auto align-items-center gx-5 active-section" id="contact">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Pet <span>Shop</span></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Sobre</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Serviços</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Assinar</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#contact" class="nav-link p-0 text-muted">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5 style="opacity: 0">Pet <span>Shop</span></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Twitter X</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5 style="opacity: 0">Pet <span>Shop</span></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">petshop@email.com</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">(XX) XXXXX XXXX</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Rua endereço bacana</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row gap-4 py-4 my-4 border-top">
+          <p>© 2025 Pet Shop, Inc. Todos os direitos reservados.</p>
+          <a href="" class="nav-link p-0">
+            <p class="text-decoration-underline">Política de Privacidade</p>
+          </a>
+          <a href="" class="nav-link p-0">
+            <p class="text-decoration-underline">Política de Cookies</p>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -1,6 +1,6 @@
 const $navbarCollapse = document.querySelector("#collapse");
 const $navbarCollapseUl = document.querySelector(".offcanvas-body ul");
-const btnlg = `<button type="button" class="btn btn-primary btn-lg">Acessar</button>`;
+const btnlg = `<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#loginSignUp">Acessar</button>`;
 let responseWindow = () => {
   let widht = window.innerWidth;
   const btnQuantity = document.querySelectorAll(".btn-lg");
