@@ -59,7 +59,7 @@ html {
   border: 2px solid var(--cor-secundaria);
 }
 .btn-primary:hover,
-.btn-secondary:hover  {
+.btn-secondary:hover {
   background-color: var(--cor-primaria);
   border: 0;
 }
@@ -86,7 +86,7 @@ h2.title {
   text-align: center;
 }
 .title span {
-  color: var(--cor-secundaria) ;
+  color: var(--cor-secundaria);
   font-weight: bold;
 }
 .text-secondary {
@@ -101,21 +101,21 @@ h2.title {
   margin-bottom: 15rem !important;
 }
 #about::before {
-  content: url('../images/dog-2.png');
+  content: url("../images/dog-2.png");
   position: absolute;
   bottom: -25rem;
   left: -15rem;
 }
 #about::before,
 #services::before {
-  scale: .8;
+  scale: 0.8;
 }
 /* SWIPER START */
 #services {
   position: relative;
 }
 #services::before {
-  content: url('../images/cat-1.png');
+  content: url("../images/cat-1.png");
   position: absolute;
   bottom: -25rem;
   right: -5rem;
@@ -143,14 +143,14 @@ h2.title {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.267);
 }
 .swiper-button-prev::after {
-  content: '\f053';
-  font-family: 'Font Awesome 5 free';
+  content: "\f053";
+  font-family: "Font Awesome 5 free";
   font-weight: 900;
   font-size: 14px;
 }
 .swiper-button-next::after {
-  content: '\f054';
-  font-family: 'Font Awesome 5 free';
+  content: "\f054";
+  font-family: "Font Awesome 5 free";
   font-weight: 900;
   font-size: 14px;
 }
@@ -160,7 +160,7 @@ h2.title {
 .swiper-button-next {
   right: 0px;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--cor-primaria) !important;
 }
 #services .bi {
@@ -181,7 +181,7 @@ h2.title {
   z-index: 2;
 }
 #pricing .title::before {
-  content: url('../images/patas\ \(1\)\ 1.png');
+  content: url("../images/patas\ \(1\)\ 1.png");
   position: absolute;
   top: -5rem;
   left: 50%;
@@ -205,7 +205,7 @@ h2.title {
 .name-card {
   margin: 0 0 1rem;
 }
-.name-card h1{
+.name-card h1 {
   font-size: 2em;
   color: var(--cor-secundaria);
 }
@@ -219,11 +219,11 @@ h2.title {
   font-size: 1.7em;
 }
 .best-offer {
-  background: linear-gradient(135deg, #FBBC05, #F57C00);
+  background: linear-gradient(135deg, #fbbc05, #f57c00);
   color: var(--cor-fundo);
   position: relative;
 }
-.best-offer .name-card span, 
+.best-offer .name-card span,
 .best-offer h1 {
   color: var(--cor-fundo);
 }
@@ -274,7 +274,7 @@ footer ul li.nav-item::before {
 .modal-body h3 {
   margin-bottom: 2rem;
 }
-.modal-body #singWithGoogle{
+.modal-body #singWithGoogle {
   background-color: rgb(241, 241, 241);
   padding: 1rem 15px;
   display: flex;
@@ -294,14 +294,14 @@ footer ul li.nav-item::before {
   align-items: center;
   position: relative;
 }
-.modal-body #orSpan span{
+.modal-body #orSpan span {
   text-transform: uppercase;
 }
 .modal-body #orSpan span::before {
   content: "";
   position: absolute;
   width: 42%;
-  background-color: rgb(227, 227, 227);;
+  background-color: rgb(227, 227, 227);
   height: 1px;
   left: 0;
   top: 50%;
@@ -310,7 +310,7 @@ footer ul li.nav-item::before {
   content: "";
   position: absolute;
   width: 42%;
-  background-color: rgb(227, 227, 227);;
+  background-color: rgb(227, 227, 227);
   height: 1px;
   right: 0;
   top: 50%;
@@ -322,7 +322,7 @@ footer ul li.nav-item::before {
   height: 45px;
   width: 100%;
 }
-.btn-success:hover{
+.btn-success:hover {
   background-color: var(--cor-primaria) !important;
   border: 0;
 }
@@ -332,8 +332,8 @@ footer ul li.nav-item::before {
 }
 .modal-body .form-control,
 .modal-body label {
-  height: 30px; 
-  font-size: 14px; 
+  height: 30px;
+  font-size: 14px;
 }
 .input-field {
   position: relative;
@@ -376,15 +376,15 @@ footer ul li.nav-item::before {
   color: var(--cor-primaria);
   text-decoration: none;
 }
-.form-check label, 
-.form-check input{
+.form-check label,
+.form-check input {
   cursor: pointer;
 }
 .form-check-input {
   box-shadow: none !important;
 }
 .form-check-input:checked {
-  background-color: var(--cor-primaria); 
+  background-color: var(--cor-primaria);
   border-color: var(--cor-primaria);
 }
 .form-check-input:focus {
@@ -392,7 +392,7 @@ footer ul li.nav-item::before {
   box-shadow: none;
 }
 .modal-body .text-center {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 .modal-body .text-center a {
   text-decoration: none;
@@ -408,5 +408,35 @@ footer ul li.nav-item::before {
   #services::before,
   #about::before {
     display: none;
+  }
+}
+
+.fade-in {
+  animation: fadeInLeft 300ms forwards;
+}
+
+.fade-out {
+  animation: fadeOutLeft 300ms forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
   }
 }

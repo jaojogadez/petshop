@@ -85,6 +85,7 @@
   <div class="modal fade" id="loginSignUp" tabindex="-1" aria-labelledby="loginSignUpLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
+        <!-- Sing Up  -->
         <div class="modal-body" id="signUp">
           <div class="d-flex justify-content-end">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -98,7 +99,7 @@
                   Sign Up with Google
                 </span>
               </button>
-              <div id="orSpan" class="text-secondary">
+              <div id="orSpan" class="text-secondary mb-3">
                 <span>Or</span>
               </div>
               <div class="input-field">
@@ -139,7 +140,59 @@
               </div>
               <input type="submit" value="Register" class="btn btn-success">
               <p class="text-center mt-4 text-secondary">
-                Already have an account? <a href="">Sign In</a>
+                Already have an account? <a href="#logIn" id="logInBtn">Log In</a>
+              </p>
+            </form>
+            <div class="col-md-6 order-sm-1">
+              <img src="images/dog-1.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <!-- Log In -->
+        <div class="modal-body d-none" id="logIn">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="row gx-5 align-items-center p-3">
+            <form class="col-md-6 order-2" autocomplete="off">
+              <h3>Log In Your Account</h3>
+              <button type="button" class="mb-4 w-100 rounded-3" id="singWithGoogle">
+                <img src="images/google.png" class="img-fluid" width="20" alt="google icon"> 
+                <span class="text-secondary"> 
+                  Sign Up with Google
+                </span>
+              </button>
+              <div id="orSpan" class="text-secondary mb-3">
+                <span>Or</span>
+              </div>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="OFF"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+                <label for="email"><i class="bi bi-at"></i> Email</label>
+              </div>
+              <div class="input-field">
+                <input
+                  required=""
+                  autocomplete="off"
+                  type="password"
+                  name="text"
+                  id="password"
+                />
+                <label for="username"><i class="bi bi-lock"></i> Password</label>
+              </div>
+              <div class="form-check p-0">
+                <label class="form-check-label" >
+                  <a href="">Forgot the password?</a>
+                </label>
+              </div>
+              <input type="submit" value="Log In" class="btn btn-success">
+              <p class="text-center mt-4 text-secondary">
+                Don't have an account? <a href="#signUp" id="signUpBtn">Sign Up</a>
               </p>
             </form>
             <div class="col-md-6 order-sm-1">
