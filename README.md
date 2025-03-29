@@ -4,8 +4,6 @@ Um sistema web desenvolvido para oferecer serviços e informações sobre cuidad
 
 ![Projeto - Petshop](https://github.com/user-attachments/assets/0d5ed2be-77fd-40b6-99ff-f03f61383640)
 
-
-
 🔗 Acesse o projeto: [https://jaojogadez.github.io/petshop/]
 
 ## ✨ Recursos
@@ -27,15 +25,18 @@ Um sistema web desenvolvido para oferecer serviços e informações sobre cuidad
 * 🎯 Botão dinâmico "Acessar" na navbar ou menu off-canvas.
   
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas até o momento
 
 * Frontend: HTML5, CSS3, JavaScript
 
 * Framework CSS: Bootstrap v5.2.3
 
 * Bibliotecas: Swiper v11, Font Awesome v6.7.2
-  
 
+# ⚠️ Atenção - Projeto em Desenvolvimento...
+Para qualquer dúvida ou problema, entre em contato via GitHub: [@jaojogadez](https://github.com/jaojogadez).
+
+<!--
 ## 📋 Requisitos
 
 * 🌐 Um navegador web (Chrome, Firefox, Safari, etc.)
@@ -84,4 +85,4 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 📩 Contato/Suporte
 
-Para qualquer dúvida ou problema, entre em contato via GitHub: [@jaojogadez](https://github.com/jaojogadez).
+Para qualquer dúvida ou problema, entre em contato via GitHub: [@jaojogadez](https://github.com/jaojogadez). 
