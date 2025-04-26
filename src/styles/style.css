@@ -140,7 +140,8 @@ h2.title {
   color: var(--cor-primaria);
   border: 1px solid #f9fafb;
   border-radius: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.267);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.120);
+  z-index: 9999;
 }
 .swiper-button-prev::after {
   content: "\f053";
@@ -155,10 +156,10 @@ h2.title {
   font-size: 14px;
 }
 .swiper-button-prev {
-  left: 0px;
+  left: .1em;
 }
 .swiper-button-next {
-  right: 0px;
+  right: .1em;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--cor-primaria) !important;
@@ -241,7 +242,6 @@ h2.title {
 /* FOOTER */
 footer {
   position: relative;
-  z-index: 9999;
 }
 footer h5 {
   font: normal 600 2em var(--fonte-logo);
