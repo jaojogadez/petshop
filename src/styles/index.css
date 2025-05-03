@@ -1,0 +1,115 @@
+/* VARS CSS */
+@import url("./general.css");
+
+/* COMPONENT'S CSS */
+@import url("./navbar.css");
+@import url("./swiper.css");
+@import url("./prices.css");
+@import url("./footer.css");
+@import url("./modal.css");
+
+body,
+html {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  scroll-padding-top: 5em;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: 0;
+  border-radius: 25px;
+  padding: 0;
+  height: 45px;
+  width: 140px;
+}
+.btn-primary {
+  background-color: var(--cor-secundaria);
+}
+.btn-secondary {
+  background-color: transparent;
+  color: var(--cor-primaria);
+  border: 2px solid var(--cor-secundaria);
+}
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: var(--cor-primaria);
+  border: 0;
+}
+.btn-primary:active {
+  background-color: var(--cor-primaria) !important;
+  scale: 0.9;
+}
+
+.title {
+  font: normal 600 2em var(--fonte-titulos) !important;
+}
+h2.title {
+  text-align: center;
+}
+.title span {
+  color: var(--cor-secundaria);
+  font-weight: bold;
+}
+.text-secondary {
+  font: normal normal 1.1em var(--cor-texto);
+}
+.col {
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+#about {
+  position: relative;
+  margin-bottom: 15rem !important;
+}
+#about::before {
+  content: url("../images/dog-2.png");
+  position: absolute;
+  bottom: -25rem;
+  left: -15rem;
+}
+#about::before,
+#services::before {
+  scale: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container-card {
+    flex-direction: column;
+  }
+  #services::before,
+  #about::before {
+    display: none;
+  }
+}
+
+.fade-in {
+  animation: fadeInLeft 300ms forwards;
+}
+
+.fade-out {
+  animation: fadeOutLeft 300ms forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}

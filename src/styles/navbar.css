@@ -1,0 +1,33 @@
+@import url("./general.css");
+
+.navbar {
+  background-color: var(--cor-fundo);
+  transition: all 300ms ease-in;
+}
+.navbar .navbar-brand {
+  margin: 0;
+}
+.navbar a {
+  font: normal bolder 2em var(--fonte-logo);
+  color: var(--cor-texto);
+}
+.navbar a span {
+  color: var(--cor-secundaria);
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar .navbar-collapse ul li a {
+  font: normal normal 1em var(--fonte-titulos);
+}
+.btn-close,
+.navbar-toggler {
+  box-shadow: none !important;
+}
+.navbar-nav .nav-item:hover .nav-link {
+  color: var(--cor-primaria);
+}
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item:hover .nav-link {
+  color: var(--cor-primaria);
+}

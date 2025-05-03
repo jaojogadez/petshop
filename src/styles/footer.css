@@ -1,0 +1,32 @@
+@import url("./general.css");
+
+footer {
+  position: relative;
+}
+footer h5 {
+  font: normal 600 2em var(--fonte-logo);
+}
+footer h5 span {
+  color: var(--cor-secundaria);
+}
+
+footer::after {
+  content: url("../images/cat-2.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+footer ul li.nav-item {
+  position: relative;
+  color: var(--cor-texto);
+  text-indent: 1.5rem;
+}
+footer ul.nav .nav-item:hover .nav-link {
+  color: var(--cor-primaria) !important;
+}
+footer ul li.nav-item::before {
+  content: url("../images/pet.png");
+  position: absolute;
+  left: -25px;
+  scale: 0.8;
+}

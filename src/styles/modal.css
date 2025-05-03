@@ -1,0 +1,132 @@
+@import url("./general.css");
+
+.modal-body h3 {
+  margin-bottom: 2rem;
+}
+.modal-body #singWithGoogle {
+  background-color: rgb(241, 241, 241);
+  padding: 1rem 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 0;
+  transition: all 300ms ease-in-out;
+}
+.modal-body #singWithGoogle:hover,
+.modal-body #singWithGoogle:active {
+  background-color: rgb(227, 227, 227);
+}
+.modal-body #orSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modal-body #orSpan span {
+  text-transform: uppercase;
+}
+.modal-body #orSpan span::before {
+  content: "";
+  position: absolute;
+  width: 42%;
+  background-color: rgb(227, 227, 227);
+  height: 1px;
+  left: 0;
+  top: 50%;
+}
+.modal-body #orSpan span::after {
+  content: "";
+  position: absolute;
+  width: 42%;
+  background-color: rgb(227, 227, 227);
+  height: 1px;
+  right: 0;
+  top: 50%;
+}
+.btn-success {
+  background-color: var(--cor-secundaria);
+  border: 0;
+  padding: 0;
+  height: 45px;
+  width: 100%;
+}
+.btn-success:hover {
+  background-color: var(--cor-primaria) !important;
+  border: 0;
+}
+.btn-succes:active {
+  background-color: var(--cor-primaria) !important;
+  scale: 0.9;
+}
+.modal-body .form-control,
+.modal-body label {
+  height: 30px;
+  font-size: 14px;
+}
+.input-field {
+  position: relative;
+  margin: 0 0 1rem;
+}
+.input-field label {
+  position: absolute;
+  color: #8d8d8d;
+  pointer-events: none;
+  background-color: transparent;
+  left: 15px;
+  transform: translateY(0.6rem);
+  transition: all 0.3s ease;
+}
+.input-field input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: solid 1px #8d8d8d;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.input-field input:focus,
+.input-field input:valid {
+  outline: none;
+  border: solid 1px var(--cor-primaria);
+}
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  transform: translateY(-51%) translateX(-10px) scale(0.8);
+  background-color: #fff;
+  padding: 0px 5px;
+  color: var(--cor-primaria);
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 100px;
+}
+.form-check a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+.form-check label,
+.form-check input {
+  cursor: pointer;
+}
+.form-check-input {
+  box-shadow: none !important;
+}
+.form-check-input:checked {
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+.form-check-input:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: none;
+}
+.modal-body .text-center {
+  font-size: 0.9em;
+}
+.modal-body .text-center a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+.modal-body .text-center a:hover {
+  text-decoration: underline;
+}

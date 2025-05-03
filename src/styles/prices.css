@@ -1,0 +1,64 @@
+@import url("./general.css");
+
+#pricing .title {
+  position: relative;
+  z-index: 2;
+}
+#pricing .title::before {
+  content: url("../images/patas\ \(1\)\ 1.png");
+  position: absolute;
+  top: -5rem;
+  left: 50%;
+  z-index: 1;
+  opacity: 0.5;
+}
+.container-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: 2rem 0;
+}
+.princing-card {
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  margin: 1rem 0;
+}
+.name-card {
+  margin: 0 0 1rem;
+}
+.name-card h1 {
+  font-size: 2em;
+  color: var(--cor-secundaria);
+}
+.name-card h2 {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: normal;
+}
+.name-card span {
+  color: var(--cor-texto);
+  font-size: 1.7em;
+}
+.best-offer {
+  background: linear-gradient(135deg, #fbbc05, #f57c00);
+  color: var(--cor-fundo);
+  position: relative;
+}
+.best-offer .name-card span,
+.best-offer h1 {
+  color: var(--cor-fundo);
+}
+.best-offer .btn-primary {
+  background-color: white;
+  color: var(--cor-primaria);
+  font-size: 1.2em;
+}
+.best-offer .btn-primary:hover {
+  background-color: rgb(245, 245, 245);
+}
+.mb-5 {
+  margin-bottom: 10rem !important;
+}
