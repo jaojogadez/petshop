@@ -1,0 +1,48 @@
+@import url("./general.css");
+
+#settings-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: .5rem;
+}
+#settings-container .dropdown {
+  border: 1px solid rgba(211, 211, 211, 0.555);
+  border-radius: .5rem;
+  order: 2;
+}
+#settings-container .dropdown .dropdown-menu {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+#settings-container .dropdown a {
+  font: normal normal 1em var(--fonte-texto) !important;
+}
+#settings-container .dropdown .theme-option.active {
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+}
+
+.dark #settings-container .dropdown .theme-option.active {
+  background-color: var(--cor-destaque);
+  color: black ; 
+}
+.bi-sun-fill {
+  color: var(--cor-primaria);
+}
+.bi-moon-fill {
+  color: royalblue;
+}
+.dropdown-toggle {
+  border: none;
+  background: transparent !important;
+  color: var(--cor-texto) !important;
+}
+
+.dropdown-menu {
+  min-width: 150px;
+}
+
+.theme-option.active {
+  background-color: rgba(var(--cor-primaria), 0.1);
+}

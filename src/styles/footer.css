@@ -21,6 +21,9 @@ footer ul li.nav-item {
   color: var(--cor-texto);
   text-indent: 1.5rem;
 }
+footer ul li.nav-item .nav-link {
+  color: var(--cor-texto-secundario) !important;
+}
 footer ul.nav .nav-item:hover .nav-link {
   color: var(--cor-primaria) !important;
 }

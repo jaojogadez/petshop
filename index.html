@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 
 <head>
   <meta charset="utf-8" />
@@ -63,13 +63,44 @@
           </li>
         </ul>
       </div>
+      <div class="d-none d-lg-block" >
+        <div id="settings-container">
+          <div class="dropdown ms-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-sun-fill fs-5"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+              <li>
+                <a class="dropdown-item theme-option active" href="#" data-theme="light">
+                  <i class="bi bi-sun-fill me-2"></i> Modo Claro
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item theme-option" href="#" data-theme="dark">
+                  <i class="bi bi-moon-fill me-2"></i> Modo Escuro
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item theme-option" href="#" data-theme="auto">
+                  <i class="bi bi-display me-2"></i> Automático
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#loginSignUp">
+            Acessar
+          </button>
+        </div>
+      </div>
     </div>
   </nav>
   <!-- Offcanva -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasNavbarLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-      <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+
+      </button>
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
@@ -97,6 +128,9 @@
           <a class="nav-link" href="#contact" data-aos="fade-up" data-aos-delay="600">
             <i class="bi bi-gear"></i> Contato
           </a>
+        </li>
+        <li class="nav-item mt-2">
+          <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#loginSignUp">Acessar</button>
         </li>
       </ul>
     </div>

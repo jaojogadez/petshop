@@ -25,6 +25,7 @@
   width: 300px;
   text-align: center;
   margin: 1rem 0;
+  background-color: var(--cor-fundo-cards);
 }
 .name-card {
   margin: 0 0 1rem;

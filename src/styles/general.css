@@ -6,12 +6,20 @@
   --cor-secundaria: #fbbc05;
   --cor-destaque: #cfeaf3;
   --cor-fundo: #ffffff;
+  --cor-fundo-navbar: #ffffff;     
+  --cor-fundo-cards: #ffffff;      
   --cor-texto: #323232;
+  --cor-borda: #e1e1e1;      
   --fonte-logo: "Josefin Sans", sans-serif;
   --fonte-titulos: "Poppins", sans-serif;
   --fonte-texto: "Open Sans", sans-serif;
 }
+
 .dark {
-  --cor-fundo: #020202;
-  --cor-texto: #ffffff;
+  --cor-fundo: #121212;      
+  --cor-fundo-navbar: #1e1e1e; 
+  --cor-fundo-cards: #1e1e1e; 
+  --cor-borda: #3a3a3a;     
+  --cor-texto: #e0e0e0;      
+  --cor-texto-secundario: #b0b0b0;
 }

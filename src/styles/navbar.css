@@ -1,7 +1,7 @@
 @import url("./general.css");
 
 .navbar {
-  background-color: var(--cor-fundo);
+  background-color: var(--cor-fundo-navbar);
   transition: all 300ms ease-in;
 }
 .navbar .navbar-brand {
@@ -31,3 +31,7 @@
 .navbar-nav .nav-item:hover .nav-link {
   color: var(--cor-primaria);
 }
+/* 
+.offcanvas {
+  background-color: var(--cor-fundo);
+} */

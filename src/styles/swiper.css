@@ -16,6 +16,7 @@
 .swiper-slide {
   height: min-content;
   width: max-content;
+  background-color: var(--cor-fundo-cards);
 }
 .swiper .col-6 {
   width: 100%;
@@ -27,7 +28,7 @@
   height: 25px;
   width: 25px;
   color: var(--cor-primaria);
-  border: 1px solid #f9fafb;
+  border: 1px solid var(--cor-borda);
   border-radius: 100%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
   z-index: 9999;
@@ -49,6 +50,9 @@
 }
 .swiper-button-next {
   right: 0.1em;
+}
+.swiper-pagination-bullet { 
+  background-color: var(--cor-secundaria) !important;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--cor-primaria) !important;

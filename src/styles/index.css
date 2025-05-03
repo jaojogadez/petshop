@@ -7,6 +7,7 @@
 @import url("./prices.css");
 @import url("./footer.css");
 @import url("./modal.css");
+@import url("./theme-btn.css");
 
 body,
 html {
@@ -52,7 +53,8 @@ h2.title {
   font-weight: bold;
 }
 .text-secondary {
-  font: normal normal 1.1em var(--cor-texto);
+  font: normal normal 1.1em var(--fonte-texto);
+  color: var(--cor-texto-secundario) !important;
 }
 .col {
   padding-top: 10px;
@@ -62,6 +64,9 @@ h2.title {
 #about {
   position: relative;
   margin-bottom: 15rem !important;
+}
+#about .col {
+  background-color: var(--cor-fundo-cards) !important;
 }
 #about::before {
   content: url("../images/dog-2.png");
