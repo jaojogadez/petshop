@@ -36,13 +36,16 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar sticky-top navbar-expand-lg mb-4">
     <!-- Navbar content -->
     <div class="container col-11">
       <a class="navbar-brand" href="#"> Pet <span>Shop</span> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="bi bi-list"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="navbar-nav">
@@ -99,7 +102,7 @@
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
       <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-
+        <i class="bi bi-x-lg"></i>
       </button>
     </div>
     <div class="offcanvas-body">
@@ -142,7 +145,9 @@
         <!-- Cadastro -->
         <div class="modal-body" id="signUp">
           <div class="d-flex justify-content-end">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+              <i class="bi bi-x-lg"></i>
+            </button>
           </div>
           <div class="row gx-5 align-items-center p-3">
             <form class="col-md-6" autocomplete="off">
@@ -257,7 +262,7 @@
       </div>
     </div>
   </div>
-
+  <!-- Sections -->
   <div class="container-fluid">
     <div class="row container m-auto align-items-center gx-5 mb-5 active-section" id="home">
       <div class="col-md-6">

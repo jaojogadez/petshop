@@ -1,8 +1,10 @@
 @import url("./general.css");
 
 .navbar {
-  background-color: var(--cor-fundo-navbar);
   transition: all 300ms ease-in;
+}
+.shadow-sm {
+  background-color: var(--cor-fundo-navbar);
 }
 .navbar .navbar-brand {
   margin: 0;
@@ -21,8 +23,20 @@
   font: normal normal 1em var(--fonte-titulos);
 }
 .btn-close,
-.navbar-toggler {
+.navbar-toggler,
+.navbar-toggler-icon {
   box-shadow: none !important;
+  color: var(--cor-texto) !important;
+  background: none;
+  border-color: var(--cor-borda);
+}
+.navbar-toggler-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-toggler-icon i {
+  transform: scale(1.2);
 }
 .navbar-nav .nav-item:hover .nav-link {
   color: var(--cor-primaria);
@@ -31,7 +45,6 @@
 .navbar-nav .nav-item:hover .nav-link {
   color: var(--cor-primaria);
 }
-/* 
 .offcanvas {
   background-color: var(--cor-fundo);
-} */
+} 

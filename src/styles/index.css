@@ -23,6 +23,7 @@ html {
   padding: 0;
   height: 45px;
   width: 140px;
+  color: var(--cor-fundo);
 }
 .btn-primary {
   background-color: var(--cor-secundaria);
