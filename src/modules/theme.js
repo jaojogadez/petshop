@@ -1,5 +1,7 @@
 const dropdown = document.getElementById("dropdown-menu");
+const dropdownMovel = document.getElementById("dropdown-menu-movel");
 const themes = document.querySelectorAll(".theme-option");
+const themeIcons = document.querySelectorAll(".theme-icon");
 const html = document.documentElement;
 
 // Chamando o evento de clique para trocar tema
@@ -11,8 +13,13 @@ dropdown.addEventListener("click", (event) => {
   }
 });
 
-console.log(dropdown);
-console.log(themes);
+dropdownMovel.addEventListener("click", (event) => {
+  const element = event.target.dataset.theme;
+  if (element) {
+    console.log("Tema clicado: ", element);
+    activeTheme(element);
+  }
+});
 
 // Captura o tema escolhido
 function activeTheme(element) {
@@ -42,6 +49,11 @@ function choseTheme(theme) {
     default:
       break;
   }
+}
+
+function dark() {
+  html.classList.add("dark")
+  themeIcons.forEach((icon))
 }
 
 // Captura no DOM Storage o tema de preferência

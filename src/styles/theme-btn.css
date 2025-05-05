@@ -1,31 +1,31 @@
 @import url("./general.css");
 
-#settings-container {
+.settings-container {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-#settings-container .dropdown {
+.settings-container .dropdown {
   border: 1px solid rgba(211, 211, 211, 0.555);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   order: 2;
 }
-#settings-container .dropdown .dropdown-menu {
+.settings-container .dropdown .dropdown-menu {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
 }
-#settings-container .dropdown a {
+.settings-container .dropdown a {
   font: normal normal 1em var(--fonte-texto) !important;
 }
-#settings-container .dropdown .theme-option.active {
+.settings-container .dropdown .theme-option.active {
   background-color: var(--cor-destaque);
   color: var(--cor-texto);
 }
 
-.dark #settings-container .dropdown .theme-option.active {
+.dark .settings-container .dropdown .theme-option.active {
   background-color: var(--cor-destaque);
-  color: black ; 
+  color: black;
 }
 .bi-sun-fill {
   color: var(--cor-primaria);
@@ -45,4 +45,13 @@
 
 .theme-option.active {
   background-color: rgba(var(--cor-primaria), 0.1);
+}
+
+#movel-menu {
+  position: sticky;
+  bottom: 1rem;
+  right: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  z-index: 9999;
 }

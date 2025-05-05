@@ -44,6 +44,10 @@ html {
   scale: 0.9;
 }
 
+#sections {
+  overflow-x: hidden;
+}
+
 .title {
   font: normal 600 2em var(--fonte-titulos) !important;
 }
@@ -80,7 +84,6 @@ h2.title {
 #services::before {
   scale: 0.8;
 }
-
 @media (max-width: 768px) {
   .container-card {
     flex-direction: column;
