@@ -39,9 +39,11 @@ function choseTheme(theme) {
   switch (theme) {
     case "dark":
       html.classList.add("dark");
+      changeIcon(theme);
       break;
     case "light":
       html.classList.remove("dark");
+      changeIcon(theme);
       break;
     case "auto":
       autoTheme();
@@ -51,9 +53,18 @@ function choseTheme(theme) {
   }
 }
 
-function dark() {
-  html.classList.add("dark")
-  themeIcons.forEach((icon))
+// Trocar o ícone do botão de mudar o tema
+function changeIcon(selectedTheme) {
+  console.log(selectedTheme)
+  themeIcons.forEach((icon) => {
+    if (selectedTheme == "light") {
+      icon.classList.remove("bi-moon-fill");
+      icon.classList.add("bi-sun-fill");
+    } else if (selectedTheme == "dark") {
+      icon.classList.remove("bi-sun-fill");
+      icon.classList.add("bi-moon-fill");
+    }
+  });
 }
 
 // Captura no DOM Storage o tema de preferência
@@ -65,19 +76,22 @@ function autoTheme() {
     const prefersDarkMode = window.matchMedia(preferTheme).matches;
     if (prefersDarkMode) {
       html.classList.add("dark");
+      changeIcon("dark")
     } else {
       html.classList.remove("dark");
+      changeIcon("light")
     }
-
+    
     // Ouvinte para capturar mudanças em tempo real
     window.matchMedia(preferTheme).addEventListener("change", (event) => {
       if (event.matches) {
         html.classList.add("dark");
+        changeIcon("dark")
       } else {
         html.classList.remove("dark");
+        changeIcon("light")
       }
     });
-
   } else {
     noPreference();
   }
@@ -88,7 +102,9 @@ function noPreference() {
   const savedTheme = localStorage.getItem("theme") || "light";
   if (savedTheme == "dark") {
     html.classList.add("dark");
+    changeIcon("dark")
   } else {
     html.classList.remove("dark");
+    changeIcon("light")
   }
 }
